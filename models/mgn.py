@@ -91,7 +91,7 @@ class MGNBlock(nn.Module):
 
 class MeshGraphNets(nn.Module):
     def __init__(self, in_node_dim=7, in_edge_dim=3,
-                 hidden_dim=128, out_dim=3, num_layers=3):
+                 hidden_dim=128, out_dim=3, num_layers=4):
         """
         Args:
             in_node_dim : input node feature size (7)
