@@ -18,7 +18,7 @@ from torch_geometric.nn import GCNConv
 
 
 class GCN(nn.Module):
-    def __init__(self, in_dim=7, hidden_dim=128, out_dim=3, num_layers=6):
+    def __init__(self, in_dim=7, hidden_dim=64, out_dim=3, num_layers=3):
         """
         Args:
             in_dim     : number of input node features (7)

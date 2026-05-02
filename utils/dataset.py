@@ -198,14 +198,14 @@ class CylinderFlowDataset(Dataset):
  
 # Split samples to train/val/test
 def get_splits(h5_path: str,
-               train_frac: float = 0.7,
-               val_frac:   float = 0.15,
-               test_frac:  float = 0.15,
+               train_frac: float = 0.1,
+               val_frac:   float = 0.05,
+               test_frac:  float = 0.05,
                seed: int = 42, stats=None):
     """
     Returns (train_dataset, val_dataset, test_dataset).
  
-    The 70/15/15 split is over simulation *samples* (not timesteps),
+    The split is over simulation *samples* (not timesteps),
     so there is no data leakage between splits.
  
     Normalization stats are computed on the training split only and
