@@ -28,6 +28,7 @@ pip install torch torch_geometric h5py numpy matplotlib pickle5
 ```
 
 ## Repository Structure
+```
 Deep-Learning-Project/
 ├── models/
 │   ├── gcn.py          # GCN baseline
@@ -43,6 +44,7 @@ Deep-Learning-Project/
 ├── train.py            # Training script
 ├── evaluate.py         # Full evaluation and figure generation
 └── reproduce.py        # Reproduce all results from checkpoints
+```
 
 ## Reproducing Results
 Checkpoints are included in the repo. No retraining required.
