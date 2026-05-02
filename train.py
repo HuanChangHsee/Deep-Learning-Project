@@ -97,7 +97,7 @@ def main():
 
     # Data
     print("Loading dataset...")
-    train_ds, val_ds, test_ds, stats = get_splits(args.h5_path)
+    train_ds, val_ds, test_ds, stats = get_splits(args.h5_path, train_frac=0.1, val_frac=0.05, test_frac=0.05)
 
     train_loader = DataLoader(train_ds, batch_size=args.batch_size,
                               shuffle=True,  num_workers=2)
