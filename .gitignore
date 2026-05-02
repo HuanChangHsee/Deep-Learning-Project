@@ -3,9 +3,6 @@ data/*.h5
 data/*.zip
 data/*.pkl
 
-# Checkpoints
-checkpoints/
-
 # Python cache
 __pycache__/
 *.pyc
